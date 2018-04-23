@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         smsBTN = (Button)findViewById(R.id.smsBTN);
 
         sendBTN.setOnClickListener(this);
+        //code for call using intent
         callBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    //code for message using intent
     public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this, SubActivity.class);
         intent.putExtra("message", inputET.getText().toString());
