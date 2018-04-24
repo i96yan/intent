@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView outputTV;
     EditText inputET;
     static final int REQUEST_CODE= 17915;
+    String b;
 
 
     @Override
